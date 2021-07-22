@@ -36,3 +36,89 @@
     transform: rotate(360deg);
   }
 }
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container ul li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+}
+
+.header {
+  display: flex;
+  margin: 20px auto;
+}
+
+.employees {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+table tr th,
+table tr td {
+  padding: 10px;
+  text-align: left;
+}
+
+table tr td.no-data {
+  text-align: center;
+}
+
+table tr th:nth-child(1),
+table tr td:nth-child(1) {
+  width: 40%;
+}
+
+table tr th:nth-child(2),
+table tr td:nth-child(2) {
+  width: 30%;
+}
+
+table tr th:nth-child(3),
+table tr td:nth-child(3) {
+  width: 30%;
+}
+
+.btn-new {
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  margin: 20px auto;
+}
+
+.pagination > span {
+  padding: 0 20px;
+}
+
+.pagination span.btn-disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.pagination .btn-previous,
+.pagination .btn-next {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.skeleton {
+  padding: 10px;
+  background: #eee;
+  border-radius: 4px;
+}
