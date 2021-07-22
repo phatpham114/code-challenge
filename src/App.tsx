@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { SnackbarProvider, useSnackbar } from "notistack";
+import { SnackbarProvider } from "notistack";
 
 import "./App.css";
 
@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <div className="container">
           <Header />
           <Switch>
-            <Route path={ROUTES.COUNTER}>
+            <Route path={`(${ROUTES.COUNTER}|/)`}>
               <Counter />
             </Route>
             <Route path={ROUTES.EMPLOYEES}>
